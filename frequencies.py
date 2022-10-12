@@ -7,9 +7,12 @@ def frequencies(items):
     # Your code goes here
     
     for x in range(len(items)):
-        if items[x] in list(frequencies):
-            frequencies[items[x]] = frequencies[items[x]] + 1
+        if str(items[x]) in list(frequencies):
+            frequencies[str(items[x])] = frequencies[str(items[x])] + 1
         else:
-            frequencies[items[x]] = 1
+            frequencies[str(items[x])] = 1
     
     return frequencies
+
+
+
